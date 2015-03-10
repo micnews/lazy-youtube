@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git://github.com/micnews/lazy-youtube.git"
   },
+  "scripts": {
+    "test": "tape test.js"
+  },
   "keywords": [
     "lazy load",
     "youtube"
@@ -19,5 +22,8 @@
   "dependencies": {
     "dom-events": "^0.1.1",
     "element-class": "^0.2.0"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
   }
 }

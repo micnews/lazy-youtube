@@ -8,6 +8,12 @@
 * Usage: <div class="lazyYT" data-youtube-id="laknj093n" data-parameters="rel=0">loading...</div>
 */
 
+/**
+ * lazy-youtube fork
+ * http://creativecommons.org/licenses/by-sa/4.0/
+ * https://github.com/micnews/lazy-youtube/graphs/contributors
+ */
+
 'use strict';
 
 var elementClass = require('element-class');
@@ -106,6 +112,10 @@ module.exports = function (element, opts) {
   var containerClass = opts.container || 'lazyYT-container';
   if (element.className && elementClass(element).has(containerClass)) {
     return;
+  }
+
+  if (!element.className) {
+    element.className = '';
   }
 
   elementClass(element).add(containerClass);
