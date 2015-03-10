@@ -1,5 +1,7 @@
 # lazy-youtube.js
 
+[![Build Status](https://travis-ci.org/micnews/lazy-youtube.svg)](https://travis-ci.org/micnews/lazy-youtube)
+
 ## Description
 
 This is a JavaScript module to lazy load Youtube videos, Browserify/Node.js-style fork of https://github.com/tylerpearson/lazyYT, that does not depend on jQuery. On the initial load, the `div` will be appended by a preview `img` of the video. On click of the image, the preview `img` will be replaced by the autoplaying `iframe` Youtube video.
