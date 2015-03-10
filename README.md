@@ -6,6 +6,10 @@ This is a JavaScript module to lazy load Youtube videos, Browserify/Node.js-styl
 
 ## Setup
 
+```bash
+npm install lazy-youtube
+```
+
 HTML:
 
 ```html
