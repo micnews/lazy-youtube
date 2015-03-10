@@ -1,14 +1,13 @@
 {
   "name": "lazy-youtube",
   "version": "1.0.1",
-  "description": "A jQuery plugin to lazy load those darn slow Youtube iframe videos",
-  "main": "lazyYT.js",
+  "description": "A JavaScript module to lazy load Youtube iframe videos",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/micnews/lazy-youtube.git"
   },
   "keywords": [
-    "jQuery",
     "lazy load",
     "youtube"
   ],
@@ -16,5 +15,9 @@
   "license": "CC",
   "bugs": {
     "url": "https://github.com/micnews/lazy-youtube/issues"
+  },
+  "dependencies": {
+    "dom-events": "^0.1.1",
+    "element-class": "^0.2.0"
   }
 }
