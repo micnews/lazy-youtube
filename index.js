@@ -96,7 +96,12 @@ function init(element, opts) {
   thumbnailClass.add('lazyYT-image-loaded');
 
   on(thumbnail, 'click', function (event) {
-    event.preventDefault();
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      event.returnValue = false;
+    }
+    
     if (thumbnail.className && thumbnailClass.has('lazyYT-image-loaded') &&
         !elementClass(element).has('lazyYT-video-loaded')) {
       elementClass(element).add('lazyYT-video-loaded');
