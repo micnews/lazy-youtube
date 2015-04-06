@@ -1,6 +1,6 @@
 {
   "name": "lazy-youtube",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A JavaScript module to lazy load Youtube iframe videos",
   "main": "index.js",
   "repository": {
