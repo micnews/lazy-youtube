@@ -72,6 +72,7 @@ function init(element, opts) {
   opts = opts || {};
   var youtubeId = element.getAttribute('data-youtube-id');
   var params = opts.youtubeParameters || '';
+  var onPlay = opts.onPlay || function() {};
   element.style.paddingBottom = (9 / 16 * 100) + '%';
   element.innerHTML = innerHtml;
 
@@ -108,6 +109,7 @@ function init(element, opts) {
       element.innerHTML = '<iframe src="//www.youtube.com/embed/'
         + youtubeId + '?autoplay=1&' + params
         + '" frameborder="0" allowfullscreen></iframe>';
+      onPlay({element: element, youtubeId: youtubeId, event: event});
     }
   });
 }
