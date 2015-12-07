@@ -4,7 +4,7 @@
 * (CC) This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 * http://creativecommons.org/licenses/by-sa/4.0/
 * Contributors: https://github.com/tylerpearson/lazyYT/graphs/contributors || https://github.com/daugilas/lazyYT/graphs/contributors
-* 
+*
 * Usage: <div class="lazyYT" data-youtube-id="laknj093n" data-parameters="rel=0">loading...</div>
 */
 
@@ -20,7 +20,7 @@ var elementClass = require('element-class');
 var on = require('dom-events').on;
 
 function youtubeImageUrl(videoId, imageName) {
-  return 'http://img.youtube.com/vi/' + videoId + '/' + imageName + '.jpg';
+  return '//img.youtube.com/vi/' + videoId + '/' + imageName + '.jpg';
 }
 
 var innerHtml = [
@@ -102,7 +102,7 @@ function init(element, opts) {
     } else {
       event.returnValue = false;
     }
-    
+
     if (thumbnail.className && thumbnailClass.has('lazyYT-image-loaded') &&
         !elementClass(element).has('lazyYT-video-loaded')) {
       elementClass(element).add('lazyYT-video-loaded');
